@@ -11,12 +11,12 @@ class chatWindow : public QWidget
     QPushButton *sendButton;
     QLineEdit *nameedit;
     QLineEdit *edit;
+    chatWindow *rec;
     Q_OBJECT
 public:
-    chatWindow *rec;
+    void setrekt(chatWindow *receiver);
     chatWindow();
     chatWindow(chatWindow *c);
-
     void clear();
     void append(QString);
 

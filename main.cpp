@@ -6,8 +6,8 @@ int main(int argc, char *argv[])
 
     chatWindow ch;
     chatWindow ch1;
-    ch.rec=&ch1;
-    ch1.rec=&ch;
+    ch.setrekt(&ch1);
+    ch1.setrekt(&ch);
     ch.show();
     ch1.show();
     return app.exec();
